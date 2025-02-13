@@ -1,3 +1,4 @@
+import CustomButton from './view/CustomButton'; // Adjust the path if needed
 import { useState } from 'react'; // Import useState
 import { useTheme } from '@mui/material/styles'; // Import useTheme
 import Button from '@mui/material/Button';
@@ -97,14 +98,14 @@ export function HomeHeroCYSE1008() {
       </Box>
 
       {/* Button with variant and primary color theme */}
-      <Button
+      <CustomButton
         variant="contained"
         color="primary" // Primary color theme applied
         sx={{ mt: 2 }} // Optional margin-top for spacing
         onClick={handleClick} // Trigger handleClick on button click
       >
         {clicked ? 'You Clicked Me!' : 'Hi I am a Button'}
-      </Button>
+      </CustomButton>
     </>
   );
 }
